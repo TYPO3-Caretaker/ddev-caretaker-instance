@@ -11,7 +11,8 @@
   "require": {
     "typo3/cms": "^7.6",
     "helhum/typo3-console": "^4",
-    "caretaker/caretaker_instance": "^0.8.1"
+    "caretaker/caretaker_instance": "^0.8.1",
+    "georgringer/news": "^6.3"
   },
   "extra": {
     "typo3/cms": {
