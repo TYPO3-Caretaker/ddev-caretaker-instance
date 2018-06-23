@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "272a70623b997399185cbb4110562e64",
+    "content-hash": "47fd02fddeafe15e6e340755fe9addf8",
     "packages": [
         {
             "name": "caretaker/caretaker_instance",
@@ -155,6 +155,72 @@
                 "instantiate"
             ],
             "time": "2015-06-14T21:17:01+00:00"
+        },
+        {
+            "name": "georgringer/news",
+            "version": "6.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/news.git",
+                "reference": "5d12b36e30cea3cd958e6efa1e5e6fd43d490390"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/5d12b36e30cea3cd958e6efa1e5e6fd43d490390",
+                "reference": "5d12b36e30cea3cd958e6efa1e5e6fd43d490390",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^7.6.13 || >=8.5.0 <9"
+            },
+            "replace": {
+                "news": "self.version",
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "nimut/testing-framework": "^1.0",
+                "phpunit/phpunit": "~4.8.0"
+            },
+            "suggest": {
+                "dmitryd/typo3-dd-googlesitemap": "~2.0",
+                "reelworx/rx-shariff": "~10.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "homepage": "http://montagmorgen.at",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Versatile news extension, based on extbase & fluid for TYPO3 CMS",
+            "homepage": "http://montagmorgen.at",
+            "keywords": [
+                "article",
+                "extension",
+                "news",
+                "typo3"
+            ],
+            "time": "2018-02-01T08:37:18+00:00"
         },
         {
             "name": "helhum/typo3-console",
