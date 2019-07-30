@@ -3,8 +3,8 @@ return [
     'BE' => [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$P$C5Tvx.Qid12E2VQB2O0tZCU7sIijI00',
-        'loginSecurityLevel' => 'normal',
+        'installToolPassword' => '$P$Cw/.hSjD0eQb3jOQwYdrG1aXD7MrwM1',
+        'loginSecurityLevel' => 'rsa',
     ],
     'DB' => [
         'database' => 'db',
@@ -15,20 +15,15 @@ return [
     ],
     'EXT' => [
         'extConf' => [
-            'backend' => 'a:3:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:0:"";s:20:"loginBackgroundImage";s:0:"";}',
-            'caretaker_instance' => 'a:2:{s:7:"crypto.";a:2:{s:9:"instance.";a:2:{s:9:"publicKey";s:451:"-----BEGIN PUBLIC KEY-----|MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsqupZpSjd+Fas31AU7h6|3QJqUcgzXmQ7K6Y7n0as4QGiv3HC7yI6bKhK8zorELqnv6PiJM2cod2xZC8shYMz|qZI6kMDj2VlXq/LVAMQPKERtOBoZsdWYNNRFLBVfT420MCicgZF7n5xAhF8aAHWE|XITWjImnQElOMi5GlDctusT/LtjVpYLV2uJ24xWotUS+ImHBp4dv3nkpPD7eONOJ|0Wejy5Wptj6kZBZRgQQgHk3CxEkbfldEiplTXnZs/GRGsbz0kQqak36tTBi4ncUX|XKXmtiVtDMbYPNEF6MVD9BDtTwB90G57ROcbAWJij3EiQmIKifHYvOPWUxk9fZ69|zQIDAQAB|-----END PUBLIC KEY-----|";s:10:"privateKey";s:1704:"-----BEGIN PRIVATE KEY-----|MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyq6lmlKN34Vqz|fUBTuHrdAmpRyDNeZDsrpjufRqzhAaK/ccLvIjpsqErzOisQuqe/o+IkzZyh3bFk|LyyFgzOpkjqQwOPZWVer8tUAxA8oRG04Ghmx1Zg01EUsFV9PjbQwKJyBkXufnECE|XxoAdYRchNaMiadASU4yLkaUNy26xP8u2NWlgtXa4nbjFai1RL4iYcGnh2/eeSk8|Pt4404nRZ6PLlam2PqRkFlGBBCAeTcLESRt+V0SKmVNedmz8ZEaxvPSRCpqTfq1M|GLidxRdcpea2JW0Mxtg80QXoxUP0EO1PAH3QbntE5xsBYmKPcSJCYgqJ8di849ZT|GT19nr3NAgMBAAECggEAWgNDp8twg3/ECzMpykPhmiCSYbtDreU/LiFkXjzj8cO6|M0rj00fiOUWb5OfENHxk8JZm4vW3WJDwwrFFc8oCqAZkfPLAl4p8McN37hfYLwgy|IhZ8JWyfbtYWNzxZNSIFylFbb6dUqbe1hTrIRbzuvxGpaUocObX0sDFCG3+lCTdI|aW1kbVTQBauD//LjWfvKMItWiSq8jMN9qsp1gKs3QxAEmDBHCupoyFnO2FG3H2df|TjEKJH9HKjhHsrbpVRRFMtoIHaD6nLug1tIxwHbm09rBKG/icoS0Fvbh6hIObFNu|nCUnQ6OvWWsClitmG15+xC+Qh0p0LBOa8jbPdyTTPQKBgQDbypTQfr2BMEAg9xFk|Fb39mwCWACJpH7BCwKWK+1pawzA7pB2jYxiLVBCgYe2Stil3Dr8g9h2JpRBLHdjf|oqpMKucw+e8YfozWu/mL+75DSRv0jiQ3Ihzxps8Tcq8VsrB8TmO9okucaNHgPdru|SLTl3bkEq1ex/ERV8YyAMhBVXwKBgQDQGt0zdT4y1XvnWDIM9hAg8ShYCgqVQJBb|nS2/68yg3kIj9bcROY75pZ2BZ6hDEoHkN7wEhbfEZBH9/JimykHdoM7HPq1X55Gg|lD0ZRl3UP7DkXnE6PXKPBwAyHFzH7auQ/TvL958FXvXprOl7CA71M8lvY59rk61h|Vk0bt/bwUwKBgB6UOswfNgJpUiLD/RltpPdJv3UfI6p4jC9dWirR+aozCdziYnU+|7kVENuP5e/IzgeVcmd7eHxHtcyzgRDIpEYRzW6MGwusngDTIBlohdkEqRMdrl0JM|brZ4PMs5434jVEaXKW1SzS4/ryOBt5n7Z5+rj3hE1nie3msOpjuXu4oFAoGAZ3KT|Nvs3Ggnpd8ztxGelCNsYVPtY22ym1gPCND9BD06szjdc82ELY6oiK6udhwnyK8JQ|4maePTAJiZpBP9gW+dbwMzdC8Ama6JoH7UJ/bfzjMAKKgor9IYA3ZrGWpYPN31si|mHfVQtQ7phdgUNpmpRlDLu3014MnktVVq0u9oyUCgYEAwoLQHQ3OCKEXpL2yFPRR|XxPYNaNSrsL0sdAzFs8gPBN1iAX2t5au21gLteZV0Em3wiPvQG8PR6ljl3TZr0cL|LftEEXqKh7UoJ0yr0vJspWIJGOWTJV0GyqlSxXosFLLMttnYy+upJ0HP+6lnN21N|dTWJBzaV21bDXCs3M6FQRmg=|-----END PRIVATE KEY-----|";}s:7:"client.";a:1:{s:9:"publicKey";s:451:"-----BEGIN PUBLIC KEY-----|MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArb4MFdbQADlDBBHAOu42|vRmzP99m+cWHNWbVh7oQDRMPGKaKafGTgHEmJ3/63FaUETW6mJKIwTFX2b/6+44A|fFrpXSdBM8D1rjldvXfYj45t95yKzHS0gBEvlfNiKaTcJDTy5zf/TaPCdwq8c+YP|BdfOIyySmgGq6Uof6AiFHCTUadZeGAXKuQCPspUYXQPsgFNltMaVyuDlZWQmL8rM|ie0ay4qCt/SDsFcL52SfuE5go2h5YGTeN60IMgON3cTJOaqKz6dJ82DsvVGWlWWS|57B4XW1QyRiIn4C9cT+z10AiLO5bkMVqk42T4BY+ikGjIjxf26sbnA4GBFDXPNZ2|rQIDAQAB|-----END PUBLIC KEY-----|";}}s:9:"security.";a:1:{s:28:"clientHostAddressRestriction";s:0:"";}}',
-            'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
-            'fluid_styled_content' => 'a:1:{s:32:"loadContentElementWizardTsConfig";s:1:"1";}',
-            'news' => 'a:16:{s:13:"prependAtCopy";s:1:"1";s:6:"tagPid";s:1:"1";s:12:"rteForTeaser";s:1:"0";s:22:"contentElementRelation";s:1:"1";s:21:"contentElementPreview";s:1:"1";s:13:"manualSorting";s:1:"0";s:19:"categoryRestriction";s:0:"";s:34:"categoryBeGroupTceFormsRestriction";s:1:"0";s:19:"dateTimeNotRequired";s:1:"0";s:11:"archiveDate";s:4:"date";s:12:"mediaPreview";s:5:"false";s:24:"showAdministrationModule";s:1:"1";s:35:"hidePageTreeForAdministrationModule";s:1:"0";s:12:"showImporter";s:1:"0";s:18:"storageUidImporter";s:1:"1";s:22:"resourceFolderImporter";s:12:"/news_import";}',
+            'caretaker_instance' => 'a:2:{s:7:"crypto.";a:2:{s:9:"instance.";a:2:{s:9:"publicKey";s:451:"-----BEGIN PUBLIC KEY-----|MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxAHbAkdg5byzTyEtYoey|QRf96+eGBVsfyPqdBHOtQskT5MHbo38Ae3ACcpq6zfk8yaxbdwpN+ggA0cBp0yZA|LU/fH7KKBm7ooJ3nxM/Ll1IvtwHwDjEGtJwi8E3EPvbFaCflACKOQxhFdygjK+MY|o0jsUDVuIGq2FieRWVh8Pifiw/sfqbmrkspp89ZPXEus3oosD9H6Do6DRod2YCE6|TTEbBu+/3UoIQ56X95QBIaemkZPow0xU91cYfLRdS2irWMk4fxwvgO/kOA3QSeif|RfVCHfPYm7MDJjsI3jI3iJYZJoGC5kaCu1w0pczHT/jI3GIRBeU3BrfPAWsA8ztS|gQIDAQAB|-----END PUBLIC KEY-----|";s:10:"privateKey";s:1704:"-----BEGIN PRIVATE KEY-----|MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEAdsCR2DlvLNP|IS1ih7JBF/3r54YFWx/I+p0Ec61CyRPkwdujfwB7cAJymrrN+TzJrFt3Ck36CADR|wGnTJkAtT98fsooGbuignefEz8uXUi+3AfAOMQa0nCLwTcQ+9sVoJ+UAIo5DGEV3|KCMr4xijSOxQNW4garYWJ5FZWHw+J+LD+x+puauSymnz1k9cS6zeiiwP0foOjoNG|h3ZgITpNMRsG77/dSghDnpf3lAEhp6aRk+jDTFT3Vxh8tF1LaKtYyTh/HC+A7+Q4|DdBJ6J9F9UId89ibswMmOwjeMjeIlhkmgYLmRoK7XDSlzMdP+MjcYhEF5TcGt88B|awDzO1KBAgMBAAECggEALGIfLYzsLBlmoOxqUn1Xp9W+8cQjXOMdd20IURHAkfbm|Qk6DZapEea8LXtgapLljQmd87p+uuIdHaDehvuZScfA8HflXt801b+lRqgdDmqhJ|la8ipJQFaLBSWQfDAF7wpH0kJbutaxP75td332A1HARPPnpazYxcXvfmucyHlasc|73E0B7m4WHbOjnELI3TTgyFwVIK/kdleX+k0AJxeRfk7v/xFSDhXDzPzCKKc/uZZ|Ib3BFSIK5rWCuLBna3U8WnA3ZnBz8bhPzboSk9S9iykFzwwfbRC1/vn2FsWWObvj|9w+6eq4TwqK8LiU8eyd3Qv5av+zuwInPBzBYHpCN4QKBgQDpCIYdnJtTouETpxi5|C6+u6hV5McrYnP9735AhuJFBN0KGm0dIND11aKeyWxscXH9qGw4/NjJ8YLiCjZEM|Gfp0ZcmHQdq80+Vr8Nh8WeCVL8OpQzY1HJTOUAfCKD1JivYPWGFS/lWCr7ozJVQq|SDf8Jpe642bq5UoHTmO0058KNwKBgQDXUyg3lNEPK66zo42ItnU69DuBOIGb6b7G|YS1cfVOLvriXBYiio/vjLq6LI3trKUqZVszTCn5zjjGsvG+h3BAZJUq8TYr2tals|/txyeRUgTqmlIr8LiDlXNJjCw9T21bSAtwPelEzwTO9yg1hGWy2k7BFPZvMSoD8A|9FDdvOzNBwKBgBrf1se3ddpRYG+px5oflOUxLcTKT0Bn6rbYc4DQDkBdJRjs822K|SMQvi5dwFlJRAIi2EhCMKYpahSzZMq8Yl9+wlWs51wYL0dt+7Rh6LQJHfeMZUzkQ|0MByTlK/3UGL+xCN+rtdhXMK3Qhk963gokQ8FyeAbjAMvVrWWX1TInZFAoGAXdam|szpOta7SzwTa/JaPlmazvAf1LA59DpVxIFqZ20/9wAswVbjjYEmK1aZb9gKjuRnD|38E2BIQWj/H7MG3oMh03acLdadEXiiGzzsuH8nF1qzruSUdPvfp1DIQtvni51lJs|BEdbFGpi++PTx62awcIDdTgnfJmLe4394/SeumcCgYEAs3ZC3eGfOPjuCXB7X7MG|2d7gw0fgWXEXwOsM0JO+RkqzBap0YZH/uH11JXmPr9W7yKMQ/TfVnPdwBGjeXRnU|CMHR8KOFrfGdk3/6kHxzR3Izz6cPCnEl6RcxV25rHQV+5VOhn27eSag2ekkWsVbm|jqwcKWAXpi4IaLAQxAs1dYE=|-----END PRIVATE KEY-----|";}s:7:"client.";a:1:{s:9:"publicKey";s:0:"";}}s:9:"security.";a:1:{s:28:"clientHostAddressRestriction";s:0:"";}}',
             'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
-            'rtehtmlarea' => 'a:8:{s:21:"noSpellCheckLanguages";s:23:"ja,km,ko,lo,th,zh,b5,gb";s:15:"AspellDirectory";s:15:"/usr/bin/aspell";s:20:"defaultConfiguration";s:105:"Typical (Most commonly used features are enabled. Select this option if you are unsure which one to use.)";s:12:"enableImages";s:1:"0";s:20:"enableInlineElements";s:1:"0";s:19:"allowStyleAttribute";s:1:"1";s:24:"enableAccessibilityIcons";s:1:"0";s:16:"forceCommandMode";s:1:"0";}',
             'saltedpasswords' => 'a:2:{s:3:"BE.";a:4:{s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}s:3:"FE.";a:5:{s:7:"enabled";i:1;s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}}',
-            'scheduler' => 'a:4:{s:11:"maxLifetime";s:4:"1440";s:11:"enableBELog";s:1:"1";s:15:"showSampleTasks";s:1:"1";s:11:"useAtdaemon";s:1:"0";}',
         ],
     ],
     'FE' => [
         'cHashIncludePageId' => true,
         'debug' => false,
+        'enableRecordRegistration' => false,
         'loginSecurityLevel' => 'rsa',
     ],
     'GFX' => [
@@ -48,7 +43,6 @@ return [
             'TYPO3\CMS\Install\Updates\BackendUserStartModuleUpdate' => 1,
             'TYPO3\CMS\Install\Updates\Compatibility6ExtractionUpdate' => 1,
             'TYPO3\CMS\Install\Updates\ContentTypesToTextMediaUpdate' => 1,
-            'TYPO3\CMS\Install\Updates\ExtensionManagerTables' => 1,
             'TYPO3\CMS\Install\Updates\FileListInAccessModuleListUpdate' => 1,
             'TYPO3\CMS\Install\Updates\FileListIsStartModuleUpdate' => 1,
             'TYPO3\CMS\Install\Updates\FilesReplacePermissionUpdate' => 1,
@@ -72,7 +66,7 @@ return [
         'caching' => [
             'cacheConfigurations' => [
                 'extbase_object' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\ApcuBackend',
                     'frontend' => 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend',
                     'groups' => [
                         'system',
@@ -87,11 +81,11 @@ return [
         'devIPmask' => '',
         'displayErrors' => 0,
         'enableDeprecationLog' => false,
-        'encryptionKey' => 'ab15bc8b61441149c33a59fdaaea1924b53c610f2a3dbaea99e81678be70a26772596fcc17f2f4665fe964dea9f901b1',
+        'encryptionKey' => '9e315ad29be6d89785b906ee359ec23c16435673c347daf19b675b91c6273a018ba9ec77f421fc7546f696bfea82ae81',
         'exceptionalErrors' => 20480,
         'isInitialDatabaseImportDone' => true,
         'isInitialInstallationInProgress' => false,
-        'sitename' => 'caretaker instance',
+        'sitename' => 'Caretaker Instance',
         'sqlDebug' => 0,
         'systemLogLevel' => 2,
         't3lib_cs_convMethod' => 'mbstring',
