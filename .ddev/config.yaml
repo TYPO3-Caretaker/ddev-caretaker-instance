@@ -146,3 +146,6 @@ hooks:
     - exec: git submodule init
     - exec: git submodule update
     - exec: composer install
+    - exec: "vendor/bin/typo3cms install:setup --non-interactive --database-user-name=db --database-user-password=db \
+      --database-host-name=db --database-port=3306 --database-name=db --use-existing-database --admin-user-name=admin \
+      --admin-password=password --site-setup-type=site"
