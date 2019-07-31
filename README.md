@@ -8,8 +8,6 @@
 ```
 git clone https://github.com/TYPO3-Caretaker/ddev-caretaker-instance.git && \
 cd ddev-caretaker-instance && \
-git submodule init && \
-git submodule update && \
 ddev start && \
 open https://ddev-caretaker-instance.ddev.site/typo3/install/
 ```

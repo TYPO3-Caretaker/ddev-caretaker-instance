@@ -143,4 +143,6 @@ timezone: ""
 # for them. Example:
 hooks:
   post-start:
+    - exec: git submodule init
+    - exec: git submodule update
     - exec: composer install
