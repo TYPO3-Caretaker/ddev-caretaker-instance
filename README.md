@@ -14,4 +14,4 @@ ddev start && \
 open https://ddev-caretaker-instance.ddev.site/typo3/install/
 ```
 
-Login with "password" and create your backend user. DDEV add a database config to AdditionalConfiguration.php, which is not for TYPO3 v7. You can remove this to get rid off the Warning.
+Login with "password" and create your backend user.
