@@ -11,3 +11,8 @@
 /.webimageExtra
 /.dbimageExtra
 /*-build/Dockerfile.example
+/.dbimageBuild
+/.sshimageBuild
+/.webimageBuild
+/commands
+/homeadditions
