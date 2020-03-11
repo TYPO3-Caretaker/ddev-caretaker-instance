@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "109ca31eb7239713410e1aa723a4f7b3",
+    "content-hash": "d5bc3b5af370834767b7f48d868f49fc",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -776,16 +776,16 @@
         },
         {
             "name": "helhum/typo3-console",
-            "version": "v5.8.2",
+            "version": "v5.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Console/TYPO3-Console.git",
-                "reference": "f6a43797fbcdec5ae5e3a2576948ab50c8623082"
+                "reference": "2e6b9eb9910fc79d24b0ed6ce5317503669d9535"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Console/TYPO3-Console/zipball/f6a43797fbcdec5ae5e3a2576948ab50c8623082",
-                "reference": "f6a43797fbcdec5ae5e3a2576948ab50c8623082",
+                "url": "https://api.github.com/repos/TYPO3-Console/TYPO3-Console/zipball/2e6b9eb9910fc79d24b0ed6ce5317503669d9535",
+                "reference": "2e6b9eb9910fc79d24b0ed6ce5317503669d9535",
                 "shasum": ""
             },
             "require": {
@@ -865,7 +865,7 @@
                 "console",
                 "typo3"
             ],
-            "time": "2019-12-16T14:05:44+00:00"
+            "time": "2019-08-22T10:03:46+00:00"
         },
         {
             "name": "helhum/typo3-console-plugin",
