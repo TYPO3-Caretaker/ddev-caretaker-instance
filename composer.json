@@ -1,30 +1,18 @@
 {
 	"repositories": [
-		{ "type": "composer", "url": "https://composer.typo3.org/" }
+		{ "type": "composer", "url": "https://composer.typo3.org/" },
+		{ "type": "git", "url": "https://github.com/helhum/TYPO3-Console.git" }
 	],
 	"name": "caretaker/ddev-caretaker-instance",
 	"description" : "TYPO3 CMS Base Distribution",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"typo3/cms-base-distribution": "^9.5",
-		"helhum/typo3-console": "5.7.2"
-	},
-	"scripts":{
-		"typo3-cms-scripts": [
-			"typo3cms install:fixfolderstructure",
-			"typo3cms install:generatepackagestates"
-		],
-		"post-autoload-dump": [
-			"@typo3-cms-scripts"
-		]
+		"typo3/cms-base-distribution": "^10.3",
+		"helhum/typo3-console": "dev-experimental-v10"
 	},
 	"extra": {
 		"typo3/cms": {
 			"web-dir": "public"
-		},
-		"helhum/typo3-console": {
-			"comment": "This option is not needed ay more for helhum/typo3-console 5.x",
-			"install-extension-dummy": false
 		}
 	},
 	"autoload": {
