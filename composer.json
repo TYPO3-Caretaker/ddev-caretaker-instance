@@ -8,8 +8,13 @@
 	"license": "GPL-2.0-or-later",
 	"require": {
 		"typo3/cms-base-distribution": "^10.3",
-		"helhum/typo3-console": "dev-experimental-v10"
-	},
+		"helhum/typo3-console": "dev-experimental-v10",
+		"typo3/cms-lowlevel": "^10.3",
+		"ext-json": "*",
+		"ext-openssl": "*",
+		"ext-curl": "*",
+		"typo3/cms-reports": "^10.3"
+    },
 	"extra": {
 		"typo3/cms": {
 			"web-dir": "public"
@@ -17,6 +22,7 @@
 	},
 	"autoload": {
 		"classmap": [
+			"public/typo3conf/ext/caretaker_instance/Classes/",
 			"public/typo3conf/ext/caretaker_instance/classes/",
 			"public/typo3conf/ext/caretaker_instance/services/"
 		]

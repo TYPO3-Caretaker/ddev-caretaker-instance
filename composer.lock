@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1767df8b6a23bd24910b945bc6f63f5",
+    "content-hash": "74a275ad59c01f7c4b4e5a0ff036ba6e",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -789,15 +789,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/TYPO3-Console.git",
-                "reference": "940dd0089b3f6d844f34cb0a6ad9921ad46415b8"
+                "reference": "85d5e5f9280fe9cfb64b8133a2981253c1147518"
             },
             "require": {
                 "doctrine/annotations": "^1.4",
                 "helhum/config-loader": ">=0.9 <0.13",
                 "helhum/typo3-console-plugin": "^2.0.2",
                 "php": "^7.2",
-                "symfony/console": "^4.0 || ^5.0",
-                "symfony/process": "^4.0 || ^5.0",
+                "symfony/console": "^4.4 || ^5.0",
+                "symfony/process": "^4.4 || ^5.0",
                 "typo3/cms-backend": "~9.5.8 || ~10.3.0",
                 "typo3/cms-core": "~9.5.8 || ~10.3.0",
                 "typo3/cms-extbase": "~9.5.8 || ~10.3.0",
@@ -869,9 +869,9 @@
                 ],
                 "extension-release": [
                     "@extension-build",
-                    "sed -i -e 's/\"typo3-console\\/extension\"/\"helhum\\/typo3-console\"/g' ../extension/composer.json",
-                    "rm -rf ../extension/composer.lock",
-                    "rm -rf ../extension/composer.json.bak",
+                    "sed -i.bak -e 's/\"typo3-console\\/extension\"/\"helhum\\/typo3-console\"/g' ../extension/composer.json",
+                    "rm ../extension/composer.lock",
+                    "rm ../extension/composer.json.bak",
                     "rm -rf ../extension/Libraries/bin/",
                     "rm -rf ../extension/Libraries/helhum/typo3-console/Packages/",
                     "rm -rf ../extension/Libraries/helhum/typo3-console/Resources/Private/ExtensionArtifacts/",
@@ -907,7 +907,7 @@
             "support": {
                 "issues": "https://github.com/TYPO3-Console/typo3_console/issues"
             },
-            "time": "2020-03-11T14:49:22+00:00"
+            "time": "2020-03-17T12:45:33+00:00"
         },
         {
             "name": "helhum/typo3-console-plugin",
@@ -4624,6 +4624,59 @@
             "time": "2020-02-25T12:50:09+00:00"
         },
         {
+            "name": "typo3/cms-lowlevel",
+            "version": "v10.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/lowlevel.git",
+                "reference": "b21e9d1629cac4a58c829ee3ad35d5bac42dc29d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/lowlevel/zipball/b21e9d1629cac4a58c829ee3ad35d5bac42dc29d",
+                "reference": "b21e9d1629cac4a58c829ee3ad35d5bac42dc29d",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "10.3.0"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "10.3.x-dev"
+                },
+                "typo3/cms": {
+                    "Package": {
+                        "serviceProvider": "TYPO3\\CMS\\Lowlevel\\ServiceProvider",
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "lowlevel"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Lowlevel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Enables the 'Config' and 'DB Check' modules for technical analysis of the system. This includes raw database search, checking relations, counting pages and records etc.",
+            "homepage": "https://typo3.org",
+            "time": "2020-02-25T12:50:09+00:00"
+        },
+        {
             "name": "typo3/cms-recordlist",
             "version": "v10.3.0",
             "source": {
@@ -4674,6 +4727,61 @@
                 }
             ],
             "description": "List of database-records",
+            "homepage": "https://typo3.org",
+            "time": "2020-02-25T12:50:09+00:00"
+        },
+        {
+            "name": "typo3/cms-reports",
+            "version": "v10.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/reports.git",
+                "reference": "3f4f66c9544cdd21e8d6316c2b342f8261786498"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/reports/zipball/3f4f66c9544cdd21e8d6316c2b342f8261786498",
+                "reference": "3f4f66c9544cdd21e8d6316c2b342f8261786498",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "10.3.0"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-scheduler": "Determine system's status and send it via email"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "10.3.x-dev"
+                },
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "reports"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Reports\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The reports module groups several system reports.",
             "homepage": "https://typo3.org",
             "time": "2020-02-25T12:50:09+00:00"
         },
@@ -5241,6 +5349,10 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-curl": "*"
+    },
     "platform-dev": []
 }
