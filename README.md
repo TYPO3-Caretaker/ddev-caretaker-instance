@@ -13,5 +13,6 @@ ddev start && \
 open https://ddev-caretaker-instance.ddev.site/typo3/
 ```
 
-BE-User: admin
-Password: password
+TYPO3-Backend Access:
+* User: `admin`
+* Password: `password`
